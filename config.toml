@@ -1,0 +1,133 @@
+baseurl             = "https://yjc.me/"
+builddrafts         = true
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "public"
+theme               = "cocoa"
+author              = "Jesse Yang"
+pygmentsuseclasses  = true
+disqusshortname     = "yjc" # Comment out to disable Disqus.
+pluralizelisttitles = false
+googleAnalytics     = "UA-1080811-15"
+
+defaultContentLanguage = "en"
+copyright = "Jianchao Yang"
+
+
+[permalinks]
+blog  = "blog/:slug/"
+
+[params]
+# include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = true                         # whether to display small country flags for available translations
+author                 = "Jianchao Yang"
+title                  = "Jianchao (Jesse) Yang"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
+# description            = "Don't panic"
+# email                  = "hello@yjc.me"
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/favicon.png"
+github                 = "//github.com/ktmud"
+instagram              = "//instagram.com/ktmud"
+# px500                  = "//500px.com/ktmud"
+lang                   = "en"
+linkedin               = "//linkedin.com/in/ktmud"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = ""                            # appears in the site header when set to a non-empty string
+twitter                = "//twitter.com/ktmud"
+
+highlightjs            = true
+# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
+
+piwik                  = false                         # If true, Piwik integration is enabled
+# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
+# piwik_id             = 2                             # Id of your site in Piwik
+
+# avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# gravatar             = "d84b66754b024f3e3992103ba3cbbf5c"                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+
+
+[languages.en]
+languageName = "English"
+contentDir = "content/english"
+weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/jianchao-yang-resume.pdf"
+    weight = 100
+
+  # [[languages.en.menu.main]]
+  #   identifier = "zh"
+  #   name = "中文"
+  #   url = "/zh/"
+  #   weight = 200
+
+[languages.zh]
+languageName = "中文"
+contentDir = "content/chinese"
+weight = 2
+
+  # [[languages.zh.menu.main]]
+  #   identifier = "en"
+  #   name = "English"
+  #   url = "../"
+  #   weight = 200
+
+  [languages.zh.params]
+    author = "杨建超"
+
+
+# # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+# pygmentsCodefences = true
+
+# # Missing translations will default to this content language
+# defaultContentLanguage = "en"
+
+# [params.info]
+# description = "Data, human, user experience, machine learning."
+# title404 = "Things are gone."
+
+# [params.copyright]
+# prefix = ""
+# holder = "Jianchao Yang"
+# startYear = "2017"
+# suffix = ""
+
+# [params.settings]
+# # date & time format: https://golang.org/pkg/time/
+# dateFormat = "2006, Jan 02"
+# listDateFormat = "2006, Jan 02"
+# hideEntryNavigation = ["page"] # boolean / array of sections
+# hideSocialMenu = false
+# showReadingTime = true
+# noTermCloudShuffle = false
+
+# [params.social]
+# codepen = ""
+# email = "hello@yjc.me"
+# facebook = ""
+# github = "ktmud"
+# instagram = "ktmud"
+# linkedin = "ktmud"
+# twitter = "ktmud"
+
+# [params.social.config]
+# platforms = ["github","twitter","instagram","email","linkedin"]
+
+# [taxonomies]
+# # author = "authors"
+# category = "categories"
+# tag = "tags"
+
+# [permalinks]
+# page = "/:slug/"
+# cn = "/:slug/"
+

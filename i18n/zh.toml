@@ -1,0 +1,84 @@
+[author]
+one = "作者"
+other = "作者"
+
+[by]
+other = "by"
+
+[category]
+one = "类目"
+other = "类目"
+
+[contactViaEmail]
+other = "发 Email 联系"
+
+[currentPage]
+other = "当前页"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "返回主页.."
+
+[mainMenu]
+other = "主菜单"
+
+[next]
+other = "前进"
+
+[nextPage]
+other = "下一页"
+
+[nextPost]
+other = "下一篇"
+
+[noTerm]
+other = "Not a single {{ .Term }}!"
+
+[openAccountInNewTab]
+other = "在新页面打开{{ .Platform }}账号"
+
+[page]
+other = "页面"
+
+[previous]
+other = "后退"
+
+[previousPage]
+other = "上一页"
+
+[previousPost]
+other = "上一篇"
+
+[postedOn]
+other = "发表于"
+
+[readingTime]
+one = "阅读时间：1分钟"
+other = "阅读时间：{{ .Count }}分钟"
+
+[recentPosts]
+other = "近期文章"
+
+[skipToContent]
+other = "跳转到主内容"
+
+[socialMenu]
+other = "社交媒体"
+
+[tableOfContents]
+other = "目录"
+
+[tag]
+one = "标签"
+other = "标签"
+
+[blogHeading]
+other = "博客"
+
+[backToPosts]
+other = "返回文章列表"
+
+[latestPosts]
+other = "最新文章"
