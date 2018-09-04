@@ -1,4 +1,4 @@
-baseurl             = "https://yjc.me/"
+baseurl             = "//yjc.me/"
 builddrafts         = true
 canonifyurls        = true
 contentdir          = "content"
