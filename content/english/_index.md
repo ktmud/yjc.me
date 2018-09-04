@@ -3,7 +3,7 @@ title: Jianchao (Jesse) Yang
 ---
 
 <style>
-section.header .name { font-size: 20pt; }
+section.header .name { font-size: 18pt; }
 ruby { font-size: 115% }
 rt { font-size: 45% }
 </style>
@@ -14,7 +14,7 @@ Hi! My name is Jianchao Yang (<ruby>
 </ruby>). You can call me "Jesse" if Chinese 
 pronounciation is not your strong suit.
 
-I am an aspiring Data Scientist with extended experience in full stack
+I am an aspiring Data Scientist with 6+ of experience in full stack
 software development and applied machine learning. I had worked for world industry
 learders in e-commerce ([Alibaba](https://www.alibabagroup.com/en/global/home)),
 travel ([Booking.com](https://www.booking.com/)), finance ([GMO](https://www.gmo.com/)) and real estate ([Zillow](https://www.zillow.com/)). 
