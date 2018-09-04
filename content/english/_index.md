@@ -7,8 +7,8 @@ section.header .name { font-size: 20pt; }
 </style>
 
 
-Hi! My name is Jianchao Yang (杨建超). You can also call me "Jesse" if pronoucing
-Chinese names is not your strong suit.
+Hi! My name is Jianchao Yang (杨建超). You can also call me "Jesse" if Chinese 
+pronounciation is not your strong suit.
 
 I am an aspiring Data Scientist with extensive experience in full stack
 software development. I had worked for world industry
