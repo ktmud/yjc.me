@@ -17,7 +17,7 @@ copyright = "Jianchao Yang"
 
 
 [permalinks]
-blog  = "blog/:slug/"
+blog  = "/:slug/"
 
 [params]
 # include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
