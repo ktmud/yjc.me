@@ -16,7 +16,7 @@ pronounciation is not your strong suit.
 
 I am an aspiring Data Scientist with 6+ years of experience in full stack
 software development. I had worked for world 
-learders in e-commerce ([Alibaba](https://www.alibabagroup.com/en/global/home)),
+leaders in e-commerce ([Alibaba](https://www.alibabagroup.com/en/global/home)),
 travel ([Booking.com](https://www.booking.com/)), finance ([GMO](https://www.gmo.com/)) and real estate ([Zillow](https://www.zillow.com/)).
 
 I am passionate about building human-centric data products and applying
