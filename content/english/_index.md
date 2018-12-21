@@ -2,29 +2,15 @@
 title: Jianchao (Jesse) Yang
 ---
 
-<style>
-section.header .name { font-size: 18pt; }
-ruby { font-size: 115% }
-rt { font-size: 45% }
-</style>
 
 
-Hi! My name is Jianchao Yang (<ruby>
-杨 <rt>Yáng</rt><rp></rp>建超<rp></rp><rt>Jiànchāo</rt><rp>）</rp>
-</ruby>). You can call me "Jesse" if Chinese 
-pronounciation is not your strong suit.
+Hi! This is Jianchao Yang. Call me "Jesse" if that's easier.
 
-I am an aspiring Data Scientist with 6+ years of experience in full stack
-software development. I had worked for world 
-leaders in e-commerce ([Alibaba](https://www.alibabagroup.com/en/global/home)),
-travel ([Booking.com](https://www.booking.com/)), finance ([GMO](https://www.gmo.com/)) and real estate ([Zillow](https://www.zillow.com/)).
+I am a Data Technologist and Applied Machine Learning Researcher with 7 years of professional experience and 2 years of experience in conducting data analysis with advanced statistical methods
+and making data-driven decisions for real world business and social questions.
 
-I am passionate about building human-centric data products and applying
-state-of-the-art data processing and machine learning methods in answering
-real world business and social questions. My past work includes [large-scale data collection and management](https://github.com/ktmud/github-life),
-[data mining](https://github.com/ktmud/yelp-and-neighborhoods), [geographic data analysis](https://www.dropbox.com/s/gmiyy0miuwmjtpu/Final_Paper-edited.pdf?dl=0),
-and [predictive analysis](https://github.com/ktmud/mass211/blob/master/Mass%20211%20-%20Final%20Report.pdf).
+Before steering into the world of Data Science, I was a Full Stack Software Engineer and have worked for world or regional leaders in ecommerce ([Alibaba](https://www.alibabagroup.com/en/global/home)), social media ([Douban.com](https://www.douban.com)), travel ([Booking.com](https://www.booking.com/)), finance ([GMO](https://www.gmo.com/)), and real estate ([Zillow](https://www.zillow.com/)).
 
-I am currently finishing my Master's in Data Science 
-at Northeastern University, Boston and am actively seeking full-time Data Scientist, Machine Learning
-Engineer, or Data Engineer opportunities starting Spring 2019.
+I just recently graduated with a Master’s in Data Science from Northeastern University, Boston and am seeking full-time opportunities as a Data Scientist, Machine Learning Engineer, or Data Science Software Engineer starting Spring 2019.
+
+Check out my [portfolio](/portfolio/) and [LinkedIn](https://www.linkedin.com/in/ktmud/) for the type of work I have done and my full professional experience.

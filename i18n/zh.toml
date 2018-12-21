@@ -77,8 +77,14 @@ other = "标签"
 [blogHeading]
 other = "博客"
 
+[portfolioHeading]
+other = "作品"
+
 [backToPosts]
 other = "返回文章列表"
 
 [latestPosts]
 other = "最新文章"
+
+[back]
+other = "返回"

@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <p class="back">
+                <a {{ printf "href=%q" ("/portfolio" | relLangURL) | safeHTMLAttr }}>
+                    &larr;
+                    {{ i18n "back" }}
+                </a>
+            </p>
+            <div class="front-matter">
+                <div class="title-container">
+                    {{ partial "page-heading" . }}
+                    <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
+                </div>
+                {{ if .Params.image }}
+                <div class="header-image">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                </div>
+                {{ end }}
+                <ul class="info">
+                    <li class="item">{{ .Date.Format "January 2006" }}</li>
+                    {{ if .Params.demo }}
+                    <li>
+                        <a href="{{ .Params.demo }}" target="_blank">
+                            {{ .Params.demo }}
+                        </a>
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="markdown">
+                {{ .Content }}
+            </div>
+            {{ if .Params.tags }}
+            <div class="tags">
+                <strong>Tags:</strong>
+                {{range $i, $e :=  .Params.tags}}
+                    {{ if $i }},{{ end }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ $e | urlize }}">{{ $e }}</a>
+                {{end}}
+            </div>
+            {{end}}
+            <p class="back">
+                <a {{ printf "href=%q" ("/portfolio" | relLangURL) | safeHTMLAttr }}>
+                    &larr;
+                    {{ i18n "back" }}
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">{{ i18n "portfolioHeading" }}</div>
+            {{ if .Content }}
+                <div class="markdown">
+                    {{ .Content }}
+                </div>
+            {{ end }}
+            {{ if eq .Site.Params.bloggroupby "month" }}
+                {{ $.Scratch.Set "datespec" "Jan, 2006" }}
+            {{ else if eq .Site.Params.bloggroupby "year" }}
+                {{ $.Scratch.Set "datespec" "2006" }}
+            {{ end }}
+                {{ range .Data.Pages.ByPublishDate.GroupByDate ($.Scratch.Get "datespec") "desc" }}
+                    <h4 class="post-item no-bullet">
+                        <span class="date">{{ .Key }}</span>
+                    </h4>
+                    <ul class="portfolio-list">
+                        {{ range .Pages.ByPublishDate.Reverse }}
+                            {{ partial "portfolio/li.html" . }}
+                        {{ end }}
+                    </ul>
+                {{ end }}
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
+
