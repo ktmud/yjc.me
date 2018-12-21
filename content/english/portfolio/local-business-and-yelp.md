@@ -1,6 +1,6 @@
 ---
 title: Understand Local Business Dynamics with Clustering Algorithms
-date: 2018-12-09
+date: 2017-12-01
 image: /img/vegas.png
 tags:
     - Data Mining
