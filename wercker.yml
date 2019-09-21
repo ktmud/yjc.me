@@ -1,22 +1,6 @@
 box: debian
 build:
   steps:
-    - script:
-        name: install git
-        code: |
-            apt-get update
-            apt-get install git -y
-    - script:
-        name: initialize git submodules
-        code: |
-            git submodule update --init --recursive
-    - arjen/hugo-build@2.5.0:
-        version: "0.48"
-deploy:
-  steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: yjc.me 
-        basedir: public
+    - arjen/hugo-build:
+        version: "0.58.2"
+        theme: cocoa
