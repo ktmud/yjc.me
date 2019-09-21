@@ -1,9 +1,14 @@
 ---
-title: Jianchao Yang
+title: Jianchao (Jesse) Yang
 ---
 
-Hi, my name is **Jianchao Yang** (杨建超). I am a Data Technologist and Software Engineer who loves building data-centric products and runimating on data-driven decisions.
+Hi, my name is **Jianchao Yang** (杨建超), a Data Scientist / Software Engineer living in Seattle, WA.
+I love building human-centric data products and solving hard business and engineering problems.
 
-I recently finished the [Master's in Data Science](https://www.khoury.northeastern.edu/program/data-science-ms/) program at Northeastern University, Boston, MA, during which I had internships at [GMO](https://www.gmo.com/) and [Zillow](https://www.zillow.com/).
+I was a Frontend Engineer for 7 years but went back to school for an education of [Data Science](https://www.khoury.northeastern.edu/program/data-science-ms/)
+at Khoury College of Computer Sciences, Northeastern University, Boston, MA in 2016. I am now a Data Scientist at [Zillow](https://www.zillow.com/).
 
-Before steering into the world of Data Science, I worked as a Front End Engineer for 6 years, in companies of many industries and different sizes, including [Alibaba](https://www.alibabagroup.com/en/global/home), [Douban](https://www.douban.com), and [Booking.com](https://www.booking.com/).
+I have lived in 5 cities, 3 continents since graduating college. My goal of life is to see as much different things, deal with as many different problems as I can.
+
+Checkout my [portfolio](/portfolio/) and [resume](/jianchao-yang-resume.pdf) for the type of work I do.
+
