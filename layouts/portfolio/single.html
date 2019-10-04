@@ -14,7 +14,7 @@
                     {{ partial "page-heading" . }}
                     <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
                 </div>
-                {{ if .Params.image }}
+                {{ if (and .Params.image (not .Params.hideHeroImage)) }}
                 <div class="header-image">
                     <img src="{{ .Params.image }}" alt="{{ .Title }}">
                 </div>

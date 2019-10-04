@@ -6,7 +6,8 @@
         {
             "label": "serve",
             "type": "shell",
-            "command": "hugo -w"
+            "command": "hugo server -w",
+            "problemMatcher": []
         }
     ]
 }

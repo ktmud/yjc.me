@@ -4,7 +4,7 @@ date: 2018-12-09
 image: /img/review-sentiments.png
 tags:
     - Natural Language Processing
-    - Supervised Machine Learning
+    - Machine Learning
 demo: http://review-sentiments.yjc.me
 sourceCode: https://github.com/ktmud/fsauor2018/
 ---
