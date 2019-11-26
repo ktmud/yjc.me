@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural Language Processing on </title>
+    <link>//yjc.me/tags/natural-language-processing/</link>
+    <description>Recent content in Natural Language Processing on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Supervised Text Classification for Fine-grained Sentiment Analysis</title>
+      <link>//yjc.me/portfolio/fine-grained-sentiment-analysis/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/fine-grained-sentiment-analysis/</guid>
+      <description>In response to an AI Competition calling participants to predict sentiment labels for a massive online reviews dataset, I built this repository to test various supervised text classification methods in the context of fine-grained sentiment analysis.
+I evaluated the prediction performance, training speed and ease-of-use of more than 6 text feature extraction methods and 9 base classifiers, with the help of scikit-learn&amp;rsquo;s pipeline API. The methods used include TF-IDF, Word2Vec, biLM word embeddings, SVM, Linear Discriminant Analysis, Logistic Regression with Regularization, and Neutral Networks.</description>
+    </item>
+    
+  </channel>
+</rss>

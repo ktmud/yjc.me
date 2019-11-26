@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Jianchao Yang">
+<meta name="description" content="In response to an AI Competition calling participants to predict sentiment labels for a massive online reviews dataset, I built this repository to test various supervised text classification methods in the context of fine-grained sentiment analysis.
+I evaluated the prediction performance, training speed and ease-of-use of more than 6 text feature extraction methods and 9 base classifiers, with the help of scikit-learn&rsquo;s pipeline API. The methods used include TF-IDF, Word2Vec, biLM word embeddings, SVM, Linear Discriminant Analysis, Logistic Regression with Regularization, and Neutral Networks.">
+
+<meta property="og:title" content="Supervised Text Classification for Fine-grained Sentiment Analysis" />
+<meta property="og:description" content="In response to an AI Competition calling participants to predict sentiment labels for a massive online reviews dataset, I built this repository to test various supervised text classification methods in the context of fine-grained sentiment analysis.
+I evaluated the prediction performance, training speed and ease-of-use of more than 6 text feature extraction methods and 9 base classifiers, with the help of scikit-learn&rsquo;s pipeline API. The methods used include TF-IDF, Word2Vec, biLM word embeddings, SVM, Linear Discriminant Analysis, Logistic Regression with Regularization, and Neutral Networks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//yjc.me/portfolio/fine-grained-sentiment-analysis/" />
+<meta property="article:published_time" content="2018-12-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-12-09T00:00:00+00:00" /><meta property="og:site_name" content="Jianchao (Jesse) Yang" />
+
+
+<title>
+
+
+     Supervised Text Classification for Fine-grained Sentiment Analysis 
+
+</title>
+<link rel="canonical" href="//yjc.me/portfolio/fine-grained-sentiment-analysis/">
+
+
+
+<script type="text/javascript">
+    var baseURL = '\/\/yjc.me\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host != 'localhost:1313') &&
+        (host === window.location.host) &&
+        (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="//yjc.me/css/reset.css?t=2019-11-26%2021%3a02%3a47.339116604%20%2b0000%20UTC%20m%3d%2b0.059793275">
+    <link rel="stylesheet" href="//yjc.me/css/pygments.css?t=2019-11-26%2021%3a02%3a47.339116604%20%2b0000%20UTC%20m%3d%2b0.059793275">
+    <link rel="stylesheet" href="//yjc.me/css/main.css?t=2019-11-26%2021%3a02%3a47.339116604%20%2b0000%20UTC%20m%3d%2b0.059793275">
+    
+        <link rel="stylesheet" href="//yjc.me/css/override.css?t=2019-11-26%2021%3a02%3a47.339116604%20%2b0000%20UTC%20m%3d%2b0.059793275">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="//yjc.me/img/favicon.png"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="//yjc.me/"><div class="name">Jianchao Yang</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-"><a href="//yjc.me/portfolio/"><span>Porfolio</span></a></li>
+                    
+                        <li class="nav-resume"><a href="//yjc.me/jianchao-yang-resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="//instagram.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Supervised Text Classification for Fine-grained Sentiment Analysis
+
+</div>
+
+                    <div class="initials"><a href="//yjc.me/"></a></div>
+                </div>
+                
+                <div class="header-image">
+                    <img src="//yjc.me/img/review-sentiments.png" alt="Supervised Text Classification for Fine-grained Sentiment Analysis">
+                </div>
+                
+                <ul class="info">
+                    <li class="item">December 2018</li>
+                    
+                    <li>
+                        <a href="http://review-sentiments.yjc.me" target="_blank">
+                            http://review-sentiments.yjc.me
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="markdown">
+                <p>In response to an AI Competition calling participants to predict sentiment labels for a massive online reviews dataset, I built this repository to test various supervised text classification methods in the context of fine-grained sentiment analysis.</p>
+
+<p>I evaluated the prediction performance, training speed and ease-of-use of more than 6 text feature extraction methods and 9 base classifiers, with the help of scikit-learn&rsquo;s pipeline API. The methods used include TF-IDF, Word2Vec, biLM word embeddings, SVM, Linear Discriminant Analysis, Logistic Regression with Regularization, and Neutral Networks.</p>
+
+<p>I also built a <a href="http://review-sentiments.yjc.me/">bespoke interactive visualization</a> to facilitate model selection and debugging. It has the capacity to return the predictions for arbitrary review text in real-time and compute overall model performance on the fly.</p>
+
+            </div>
+            
+            <div class="tags">
+                <strong>Tags:</strong>
+                
+                    
+                    <a href="//yjc.me/tags/natural-language-processing">Natural Language Processing</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/machine-learning">Machine Learning</a>
+                
+            </div>
+            
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-1080811-15', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

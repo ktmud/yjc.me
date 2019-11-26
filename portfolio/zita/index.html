@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Jianchao Yang">
+<meta name="description" content="Zita is an all-in-one machine learning solution for building production-ready image classification services. It covers the full life cycle of creating a simple image classifier.
+You can consider it an open source alternative to Amazon SageMaker for image classification.
+Features  An easy-to-use image labelling tool for creating ground truth Out-of-the-box Jupyter notebooks and CLI commands to efficiently train and tune modern deep learning image classifiers. High-performance RPC and web API to test, evaluate and serve predictions.">
+
+<meta property="og:title" content="Zita - All-in-one Image Classification Solution" />
+<meta property="og:description" content="Zita is an all-in-one machine learning solution for building production-ready image classification services. It covers the full life cycle of creating a simple image classifier.
+You can consider it an open source alternative to Amazon SageMaker for image classification.
+Features  An easy-to-use image labelling tool for creating ground truth Out-of-the-box Jupyter notebooks and CLI commands to efficiently train and tune modern deep learning image classifiers. High-performance RPC and web API to test, evaluate and serve predictions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//yjc.me/portfolio/zita/" />
+<meta property="article:published_time" content="2019-10-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-03T00:00:00+00:00" /><meta property="og:site_name" content="Jianchao (Jesse) Yang" />
+
+
+<title>
+
+
+     Zita - All-in-one Image Classification Solution 
+
+</title>
+<link rel="canonical" href="//yjc.me/portfolio/zita/">
+
+
+
+<script type="text/javascript">
+    var baseURL = '\/\/yjc.me\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host != 'localhost:1313') &&
+        (host === window.location.host) &&
+        (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="//yjc.me/css/reset.css?t=2019-11-26%2021%3a02%3a47.338854441%20%2b0000%20UTC%20m%3d%2b0.059530686">
+    <link rel="stylesheet" href="//yjc.me/css/pygments.css?t=2019-11-26%2021%3a02%3a47.338854441%20%2b0000%20UTC%20m%3d%2b0.059530686">
+    <link rel="stylesheet" href="//yjc.me/css/main.css?t=2019-11-26%2021%3a02%3a47.338854441%20%2b0000%20UTC%20m%3d%2b0.059530686">
+    
+        <link rel="stylesheet" href="//yjc.me/css/override.css?t=2019-11-26%2021%3a02%3a47.338854441%20%2b0000%20UTC%20m%3d%2b0.059530686">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="//yjc.me/img/favicon.png"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="//yjc.me/"><div class="name">Jianchao Yang</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-"><a href="//yjc.me/portfolio/"><span>Porfolio</span></a></li>
+                    
+                        <li class="nav-resume"><a href="//yjc.me/jianchao-yang-resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="//instagram.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Zita - All-in-one Image Classification Solution
+
+</div>
+
+                    <div class="initials"><a href="//yjc.me/"></a></div>
+                </div>
+                
+                <ul class="info">
+                    <li class="item">October 2019</li>
+                    
+                    <li>
+                        <a href="https://github.com/ktmud/zita" target="_blank">
+                            https://github.com/ktmud/zita
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="markdown">
+                
+
+<p><strong>Zita</strong> is an all-in-one machine learning solution for building production-ready image classification
+services. It covers the full life cycle of creating a simple image classifier.</p>
+
+<p>You can consider it an open source alternative to Amazon SageMaker for image classification.</p>
+
+<p><img src="//yjc.me/img/zita-label.png" alt="Labeling Photos" /></p>
+
+<h2 id="features">Features</h2>
+
+<ol>
+<li>An easy-to-use image labelling tool for creating ground truth</li>
+<li>Out-of-the-box Jupyter notebooks and CLI commands to efficiently train and tune
+modern deep learning image classifiers.</li>
+<li>High-performance RPC and web API to test, evaluate and serve predictions.</li>
+</ol>
+
+<p>With only minimal setup, anyone can build, train, and deploy a production-ready custom image classification
+service within hours.</p>
+
+<p><video controls autoplay loop muted style="max-width: 100%;" src="//yjc.me/video/zita-test.mp4" /></p>
+
+            </div>
+            
+            <div class="tags">
+                <strong>Tags:</strong>
+                
+                    
+                    <a href="//yjc.me/tags/machine-learning">Machine Learning</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/tools">Tools</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/front-end">Front End</a>
+                
+            </div>
+            
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-1080811-15', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

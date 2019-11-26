@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Jianchao Yang">
+<meta name="description" content="The local business dynamics shown in the Yelp data— popularity of a business, the concentration of different types businesses, behavioral patterns of patrons—are good indica- tors of the healthiness of local business landscape and how neighborhoods are shaped by businesses.
+By extracting census tract and neighborhood level measures from Yelp data, and applying clustering algorithms on them, we uncovered business dynamics in different types of neighborhoods. We then used social econometrics and demographic information obtained from US Census data to evaluate how neighborhood characteristics correlate with business dynamics.">
+
+<meta property="og:title" content="Understand Local Business Dynamics with Clustering Algorithms" />
+<meta property="og:description" content="The local business dynamics shown in the Yelp data— popularity of a business, the concentration of different types businesses, behavioral patterns of patrons—are good indica- tors of the healthiness of local business landscape and how neighborhoods are shaped by businesses.
+By extracting census tract and neighborhood level measures from Yelp data, and applying clustering algorithms on them, we uncovered business dynamics in different types of neighborhoods. We then used social econometrics and demographic information obtained from US Census data to evaluate how neighborhood characteristics correlate with business dynamics." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//yjc.me/portfolio/local-business-and-yelp/" />
+<meta property="article:published_time" content="2017-12-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-12-01T00:00:00+00:00" /><meta property="og:site_name" content="Jianchao (Jesse) Yang" />
+
+
+<title>
+
+
+     Understand Local Business Dynamics with Clustering Algorithms 
+
+</title>
+<link rel="canonical" href="//yjc.me/portfolio/local-business-and-yelp/">
+
+
+
+<script type="text/javascript">
+    var baseURL = '\/\/yjc.me\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host != 'localhost:1313') &&
+        (host === window.location.host) &&
+        (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="//yjc.me/css/reset.css?t=2019-11-26%2021%3a02%3a47.342726739%20%2b0000%20UTC%20m%3d%2b0.063404824">
+    <link rel="stylesheet" href="//yjc.me/css/pygments.css?t=2019-11-26%2021%3a02%3a47.342726739%20%2b0000%20UTC%20m%3d%2b0.063404824">
+    <link rel="stylesheet" href="//yjc.me/css/main.css?t=2019-11-26%2021%3a02%3a47.342726739%20%2b0000%20UTC%20m%3d%2b0.063404824">
+    
+        <link rel="stylesheet" href="//yjc.me/css/override.css?t=2019-11-26%2021%3a02%3a47.342726739%20%2b0000%20UTC%20m%3d%2b0.063404824">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="//yjc.me/img/favicon.png"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="//yjc.me/"><div class="name">Jianchao Yang</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-"><a href="//yjc.me/portfolio/"><span>Porfolio</span></a></li>
+                    
+                        <li class="nav-resume"><a href="//yjc.me/jianchao-yang-resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="//instagram.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Understand Local Business Dynamics with Clustering Algorithms
+
+</div>
+
+                    <div class="initials"><a href="//yjc.me/"></a></div>
+                </div>
+                
+                <div class="header-image">
+                    <img src="//yjc.me/img/vegas.png" alt="Understand Local Business Dynamics with Clustering Algorithms">
+                </div>
+                
+                <ul class="info">
+                    <li class="item">December 2017</li>
+                    
+                    <li>
+                        <a href="http://bit.ly/yelp-and-neighborhoods" target="_blank">
+                            http://bit.ly/yelp-and-neighborhoods
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="markdown">
+                <p>The local business dynamics shown in the Yelp data— popularity of a business, the concentration of different types businesses, behavioral patterns of patrons—are good indica- tors of the healthiness of local business landscape and how neighborhoods are shaped by businesses.</p>
+
+<p>By extracting census tract and neighborhood level measures from Yelp data, and applying clustering algorithms on them, we uncovered business dynamics in different types of neighborhoods. We then used social econometrics and demographic information obtained from US Census data to evaluate how neighborhood characteristics correlate with business dynamics.</p>
+
+            </div>
+            
+            <div class="tags">
+                <strong>Tags:</strong>
+                
+                    
+                    <a href="//yjc.me/tags/data-mining">Data Mining</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/unsupervised-machine-learning">Unsupervised Machine Learning</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/geographical-data-analysis">Geographical Data Analysis</a>
+                
+            </div>
+            
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-1080811-15', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

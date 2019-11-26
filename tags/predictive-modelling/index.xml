@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Predictive Modelling on </title>
+    <link>//yjc.me/tags/predictive-modelling/</link>
+    <description>Recent content in Predictive Modelling on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/tags/predictive-modelling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Massachusetts 2-1-1 Data Analysis and Predictive Modelling</title>
+      <link>//yjc.me/portfolio/mass211/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/mass211/</guid>
+      <description>Massachusetts 2-1-1 is a phone service similar to 3-1-1 and 9-1-1, but for human services.
+With the support from Massachusetts 2-1-1 and Boston Area Research Initiative, I completed a comprehensive analysis on Mass 2-1-1 datasets, including both the call records and human service resources database. I used various data science techniques to uncover the relationship between 2-1-1 demands and community characteristics, built graphics and tools for easier data exploration, and produced multiple data byproducts that may be helpful for future projects on public health and human service issues in Massachusetts.</description>
+    </item>
+    
+  </channel>
+</rss>

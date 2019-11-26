@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analysis on </title>
+    <link>//yjc.me/tags/data-analysis/</link>
+    <description>Recent content in Data Analysis on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boston Public School Assignment Optimization</title>
+      <link>//yjc.me/portfolio/boston-public-shools/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/boston-public-shools/</guid>
+      <description>According a research conducted by Boston Area Research Initiative (BARI), racial and socialeconomic inequality still prevails in Boston&amp;rsquo;s school assignment system.
+This research project with BARI aims to address the inequity by giving underserved students more access to high quality schools. I built an optimization algorithm that iteratively adds new schools to the choice baskets of the underserved population, by looking into seat competion and other measures.</description>
+    </item>
+    
+  </channel>
+</rss>

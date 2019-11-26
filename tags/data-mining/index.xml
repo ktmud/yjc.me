@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Mining on </title>
+    <link>//yjc.me/tags/data-mining/</link>
+    <description>Recent content in Data Mining on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/tags/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understand Local Business Dynamics with Clustering Algorithms</title>
+      <link>//yjc.me/portfolio/local-business-and-yelp/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/local-business-and-yelp/</guid>
+      <description>The local business dynamics shown in the Yelp data— popularity of a business, the concentration of different types businesses, behavioral patterns of patrons—are good indica- tors of the healthiness of local business landscape and how neighborhoods are shaped by businesses.
+By extracting census tract and neighborhood level measures from Yelp data, and applying clustering algorithms on them, we uncovered business dynamics in different types of neighborhoods. We then used social econometrics and demographic information obtained from US Census data to evaluate how neighborhood characteristics correlate with business dynamics.</description>
+    </item>
+    
+  </channel>
+</rss>

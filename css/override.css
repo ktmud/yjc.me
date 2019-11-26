@@ -1,0 +1,85 @@
+ruby { font-size: 140% }
+rt { font-size: 45% }
+
+@media (min-width: 600px) {
+    section.header {
+        padding-bottom: 40px;
+    }
+}
+
+.back {
+    margin: 20px 0;
+}
+
+section.header .name {
+    text-transform: none;
+    font-size: 20px;
+}
+
+section.header nav {
+    text-transform: lowercase;
+}
+
+section.main .content .page-heading {
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+ul.info {
+    margin: 5px 0 20px;
+    line-height: 1.6em;
+    color: #666;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+ul.info li {
+    width: 50%;
+}
+ul.info li:nth-child(2) {
+    text-align: right;
+}
+ul.info strong {
+    color: #333;
+}
+.tags {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.header-image {
+    margin: 10px 0;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.portfolio-item {
+    padding: 1px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.portfolio-item a {
+    border: 10px solid #f3f3f3;
+    display: block;
+    height: 200px;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    font-size: 15px;
+}
+.portfolio-item a span {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.85)
+}
+.portfolio-item a:hover {
+    border-color: #e9e9e9;
+    opacity: 0.8;
+}

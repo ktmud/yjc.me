@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>//yjc.me/portfolio/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/front-end/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="//yjc.me/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//yjc.me/"
+                />
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/machine-learning/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="//yjc.me/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//yjc.me/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/tools/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/zita/</loc>
+    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/natural-language-processing/</loc>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/fine-grained-sentiment-analysis/</loc>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/boston-public-shools/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/data-analysis/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/education-policy/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/data-mining/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/geographical-data-analysis/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/local-business-and-yelp/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/unsupervised-machine-learning/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/mass211/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/predictive-modelling/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/data-visualization/</loc>
+    <lastmod>2015-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/portfolio/doubanj/</loc>
+    <lastmod>2015-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/tags/product-design/</loc>
+    <lastmod>2015-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//yjc.me/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="//yjc.me/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//yjc.me/categories/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jianchao (Jesse) Yang on </title>
+    <link>//yjc.me/</link>
+    <description>Recent content in Jianchao (Jesse) Yang on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Thu, 03 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zita - All-in-one Image Classification Solution</title>
+      <link>//yjc.me/portfolio/zita/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/zita/</guid>
+      <description>Zita is an all-in-one machine learning solution for building production-ready image classification services. It covers the full life cycle of creating a simple image classifier.
+You can consider it an open source alternative to Amazon SageMaker for image classification.
+Features  An easy-to-use image labelling tool for creating ground truth Out-of-the-box Jupyter notebooks and CLI commands to efficiently train and tune modern deep learning image classifiers. High-performance RPC and web API to test, evaluate and serve predictions.</description>
+    </item>
+    
+    <item>
+      <title>Supervised Text Classification for Fine-grained Sentiment Analysis</title>
+      <link>//yjc.me/portfolio/fine-grained-sentiment-analysis/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/fine-grained-sentiment-analysis/</guid>
+      <description>In response to an AI Competition calling participants to predict sentiment labels for a massive online reviews dataset, I built this repository to test various supervised text classification methods in the context of fine-grained sentiment analysis.
+I evaluated the prediction performance, training speed and ease-of-use of more than 6 text feature extraction methods and 9 base classifiers, with the help of scikit-learn&amp;rsquo;s pipeline API. The methods used include TF-IDF, Word2Vec, biLM word embeddings, SVM, Linear Discriminant Analysis, Logistic Regression with Regularization, and Neutral Networks.</description>
+    </item>
+    
+    <item>
+      <title>Boston Public School Assignment Optimization</title>
+      <link>//yjc.me/portfolio/boston-public-shools/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/boston-public-shools/</guid>
+      <description>According a research conducted by Boston Area Research Initiative (BARI), racial and socialeconomic inequality still prevails in Boston&amp;rsquo;s school assignment system.
+This research project with BARI aims to address the inequity by giving underserved students more access to high quality schools. I built an optimization algorithm that iteratively adds new schools to the choice baskets of the underserved population, by looking into seat competion and other measures.</description>
+    </item>
+    
+    <item>
+      <title>Understand Local Business Dynamics with Clustering Algorithms</title>
+      <link>//yjc.me/portfolio/local-business-and-yelp/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/local-business-and-yelp/</guid>
+      <description>The local business dynamics shown in the Yelp data— popularity of a business, the concentration of different types businesses, behavioral patterns of patrons—are good indica- tors of the healthiness of local business landscape and how neighborhoods are shaped by businesses.
+By extracting census tract and neighborhood level measures from Yelp data, and applying clustering algorithms on them, we uncovered business dynamics in different types of neighborhoods. We then used social econometrics and demographic information obtained from US Census data to evaluate how neighborhood characteristics correlate with business dynamics.</description>
+    </item>
+    
+    <item>
+      <title>Massachusetts 2-1-1 Data Analysis and Predictive Modelling</title>
+      <link>//yjc.me/portfolio/mass211/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/mass211/</guid>
+      <description>Massachusetts 2-1-1 is a phone service similar to 3-1-1 and 9-1-1, but for human services.
+With the support from Massachusetts 2-1-1 and Boston Area Research Initiative, I completed a comprehensive analysis on Mass 2-1-1 datasets, including both the call records and human service resources database. I used various data science techniques to uncover the relationship between 2-1-1 demands and community characteristics, built graphics and tools for easier data exploration, and produced multiple data byproducts that may be helpful for future projects on public health and human service issues in Massachusetts.</description>
+    </item>
+    
+    <item>
+      <title>DoubanJ - Visualize Your Reading History</title>
+      <link>//yjc.me/portfolio/doubanj/</link>
+      <pubDate>Tue, 05 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/portfolio/doubanj/</guid>
+      <description>Douban.com is a popular social media site in China that allows users to keep records of the books the read, the movies they watched, and the music they listened.
+Doubanj.com, the suspiciously named website (the domain has since expired after Douban.com shut down its API and Doubanj.com went into read-only mode), was my attempt at utilizing visualizations to present information to Douban users in a more meaningful and easier-to-digest way.</description>
+    </item>
+    
+  </channel>
+</rss>

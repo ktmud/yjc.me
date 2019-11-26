@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on </title>
+    <link>//yjc.me/zh/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jianchao Yang</copyright>
+    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//yjc.me/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>呓语</title>
+      <link>//yjc.me/zh/categories/%E5%91%93%E8%AF%AD/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/zh/categories/%E5%91%93%E8%AF%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>互联网</title>
+      <link>//yjc.me/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/</link>
+      <pubDate>Fri, 26 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/zh/categories/%E4%BA%92%E8%81%94%E7%BD%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>闲言</title>
+      <link>//yjc.me/zh/categories/%E9%97%B2%E8%A8%80/</link>
+      <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/zh/categories/%E9%97%B2%E8%A8%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>时事</title>
+      <link>//yjc.me/zh/categories/%E6%97%B6%E4%BA%8B/</link>
+      <pubDate>Sun, 09 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/zh/categories/%E6%97%B6%E4%BA%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>观后感</title>
+      <link>//yjc.me/zh/categories/%E8%A7%82%E5%90%8E%E6%84%9F/</link>
+      <pubDate>Mon, 02 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>//yjc.me/zh/categories/%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

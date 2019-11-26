@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Jianchao Yang">
+<meta name="description" content="Massachusetts 2-1-1 is a phone service similar to 3-1-1 and 9-1-1, but for human services.
+With the support from Massachusetts 2-1-1 and Boston Area Research Initiative, I completed a comprehensive analysis on Mass 2-1-1 datasets, including both the call records and human service resources database. I used various data science techniques to uncover the relationship between 2-1-1 demands and community characteristics, built graphics and tools for easier data exploration, and produced multiple data byproducts that may be helpful for future projects on public health and human service issues in Massachusetts.">
+
+<meta property="og:title" content="Massachusetts 2-1-1 Data Analysis and Predictive Modelling" />
+<meta property="og:description" content="Massachusetts 2-1-1 is a phone service similar to 3-1-1 and 9-1-1, but for human services.
+With the support from Massachusetts 2-1-1 and Boston Area Research Initiative, I completed a comprehensive analysis on Mass 2-1-1 datasets, including both the call records and human service resources database. I used various data science techniques to uncover the relationship between 2-1-1 demands and community characteristics, built graphics and tools for easier data exploration, and produced multiple data byproducts that may be helpful for future projects on public health and human service issues in Massachusetts." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//yjc.me/portfolio/mass211/" />
+<meta property="article:published_time" content="2017-09-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-09-01T00:00:00+00:00" /><meta property="og:site_name" content="Jianchao (Jesse) Yang" />
+
+
+<title>
+
+
+     Massachusetts 2-1-1 Data Analysis and Predictive Modelling 
+
+</title>
+<link rel="canonical" href="//yjc.me/portfolio/mass211/">
+
+
+
+<script type="text/javascript">
+    var baseURL = '\/\/yjc.me\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host != 'localhost:1313') &&
+        (host === window.location.host) &&
+        (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="//yjc.me/css/reset.css?t=2019-11-26%2021%3a02%3a47.343221393%20%2b0000%20UTC%20m%3d%2b0.063899026">
+    <link rel="stylesheet" href="//yjc.me/css/pygments.css?t=2019-11-26%2021%3a02%3a47.343221393%20%2b0000%20UTC%20m%3d%2b0.063899026">
+    <link rel="stylesheet" href="//yjc.me/css/main.css?t=2019-11-26%2021%3a02%3a47.343221393%20%2b0000%20UTC%20m%3d%2b0.063899026">
+    
+        <link rel="stylesheet" href="//yjc.me/css/override.css?t=2019-11-26%2021%3a02%3a47.343221393%20%2b0000%20UTC%20m%3d%2b0.063899026">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="//yjc.me/img/favicon.png"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="//yjc.me/"><div class="name">Jianchao Yang</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-"><a href="//yjc.me/portfolio/"><span>Porfolio</span></a></li>
+                    
+                        <li class="nav-resume"><a href="//yjc.me/jianchao-yang-resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="//instagram.com/ktmud" target="_blank" rel="noopener"><img class="icon" src="//yjc.me/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Massachusetts 2-1-1 Data Analysis and Predictive Modelling
+
+</div>
+
+                    <div class="initials"><a href="//yjc.me/"></a></div>
+                </div>
+                
+                <div class="header-image">
+                    <img src="//yjc.me/img/mass211.png" alt="Massachusetts 2-1-1 Data Analysis and Predictive Modelling">
+                </div>
+                
+                <ul class="info">
+                    <li class="item">September 2017</li>
+                    
+                    <li>
+                        <a href="https://mass211.herokuapp.com/" target="_blank">
+                            https://mass211.herokuapp.com/
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="markdown">
+                <p><a href="http://mass211.org/">Massachusetts 2-1-1</a> is a phone service similar to 3-1-1 and 9-1-1, but for human services.</p>
+
+<p>With the support from <a href="http://mass211.org/">Massachusetts 2-1-1</a> and <a href="https://www.radcliffe.harvard.edu/academic-ventures/research-initiatives/boston-area-research-initiative">Boston Area Research Initiative</a>, I completed a comprehensive analysis on Mass 2-1-1 datasets, including both the call records and human service resources database. I used various data science techniques to uncover the relationship between 2-1-1 demands and community characteristics, built graphics and tools for easier data exploration, and produced multiple data byproducts that may be helpful for future projects on public health and human service issues in Massachusetts.</p>
+
+<p>I tested using generalized linear models to predict 2-1-1 demands with community characteristics and established a solid baseline for prediction performance.
+I examined the variable importance with Random Forests and investigated the subtleties in community characteristics that could be help locate vulnerable population.</p>
+
+<p>The data I studied are composited into a <a href="https://mass211.herokuapp.com/">single interactive map</a>, which allows the public and policy makers to compare multiple variables side-by-side at different geographical levels. I also created a resource map where users could type and search instantly for any 2-1-1 resources.</p>
+
+<p>Read the full report here: <a href="http://bit.ly/mass211-report">http://bit.ly/mass211-report</a></p>
+
+            </div>
+            
+            <div class="tags">
+                <strong>Tags:</strong>
+                
+                    
+                    <a href="//yjc.me/tags/geographical-data-analysis">Geographical Data Analysis</a>
+                
+                    ,
+                    <a href="//yjc.me/tags/predictive-modelling">Predictive Modelling</a>
+                
+            </div>
+            
+            <p class="back">
+                <a href="//yjc.me/portfolio">
+                    &larr;
+                    Back
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-1080811-15', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
