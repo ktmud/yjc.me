@@ -17,5 +17,6 @@ deploy:
     - install-packages:
         packages: git ssh-client
     - 7h3laughingman/gh-pages@0.4.5:
+        token: $GIT_TOKEN
         path: public
         domain: yjc.me 
